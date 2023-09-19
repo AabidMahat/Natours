@@ -1,0 +1,20 @@
+extends baseEmail
+
+block content
+    p Hi Natour Family,
+        p Welcome to Natours, we're glad to have you 🎉🙏
+        
+        p Verification Mail is send to this url : #{url}.
+
+        p We're all a big familiy here, so make sure to upload your user photo so we get to know you a bit better!
+        table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+                tr
+                    td(align='left')
+                        table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+                            tbody
+                                tr
+                                    td
+                                        a(href=`${url}`, target='_blank') Reset your password
+        p If you didn't forget the password ,please ignore this mail!
+        p - Aabid Mahat, CEO
